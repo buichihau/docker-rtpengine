@@ -1,0 +1,13 @@
+version: '2.2'
+services:
+    rtpengine_vihat:
+        image: rtpengine_vihat:1.0
+        container_name: c-rtpengine
+        restart: always
+        hostname: rtpengine
+        environment: 
+          MY_IP: 103.29.26.114
+        volumes:
+           - /etc/localtime:/etc/localtime:ro
+           - ./entrypoint.sh:/entrypoint.sh
+        network_mode: "host"
