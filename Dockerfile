@@ -1,5 +1,7 @@
 FROM debian:10
 
+MAINTAINER Hau Bui <buichihau98@gmail.com>
+
 RUN apt-get update \
   && apt-get -y --quiet --force-yes upgrade curl iproute2 \
   && apt-get install -y --no-install-recommends ca-certificates gcc g++ make build-essential git iptables-dev libavfilter-dev \
