@@ -1,7 +1,7 @@
 version: '2.2'
 services:
     rtpengine_vihat:
-        image: rtpengine_vihat:1.0
+        image: rtpengine:1.0
         container_name: c-rtpengine
         restart: always
         hostname: rtpengine
