@@ -1,6 +1,6 @@
 version: '2.2'
 services:
-    rtpengine_vihat:
+    rtpengine:
         image: rtpengine:1.0
         container_name: c-rtpengine
         restart: always
